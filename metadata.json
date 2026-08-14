@@ -1,0 +1,6 @@
+{
+  "name": "dtp-carbooking",
+  "description": "Mobile car booking application with real-time vehicle location tracking, driver monitoring, ETA estimation, and trip management.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
