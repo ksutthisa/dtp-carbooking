@@ -11,13 +11,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Bun / Node
-        uses: oven-sh/setup-bun@v1 # หรือถ้าใช้ npm ให้เปลี่ยนเป็น setup-node ตามความเหมาะสม
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: Install Dependencies & Build
         run: |
-          bun install
-          bun run build
+          npm install
+          npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
